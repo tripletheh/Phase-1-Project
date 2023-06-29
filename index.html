@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script defer type="text/javascript" src="./index.js">
+
+  </script>
+</head>
+
+<body id="main-body">
+  <button id="back-to-top">Back to Top</button>
+
+  <header class="top-nav">
+    <img id="logo" src="https://www.logo.wine/a/logo/Reddit/Reddit-Horizontal-White-Dark-Background-Logo.wine.svg"  />
+    <button id="toggle-night" style="filter: grayscale(100%); background-color: black;">🌙
+      <!-- <div class="tooltip">Toggle Night Mode</div> -->
+    </button>
+    <input type="text" id="search-bar" onkeydown="alert('Sorry, this does not work yet')" placeholder="   🔎  Search Reddit"></input>
+    <text class='top-right' id='log-in'>Log In</text>
+    <text class='top-right' id="get-app">Get app</text>
+  </header>
+
+  <header id="under-top-nav">
+    <img id='beer-header' src="https://images5.alphacoders.com/437/thumb-1920-437743.jpg">
+  </header>
+
+  <div id="subreddit-name-bar">
+    <div id="subreddit-content-in-bar">
+      <img class='beer-icon'
+        src="https://img.freepik.com/premium-vector/beer-flat-icon-vector-isolated-color-background_808505-500.jpg">
+      <h1 id='subreddit-name'>BrewCrew</h1>
+      <button id="join-sub">Join</button>
+      <h4 id="r_subreddit">r/BrewCrew</h4>
+    </div>
+    <span class="posts-wiki" id="posts-select">Posts</span>
+    
+  </div> 
+
+  <div class='comment-column'>
+    <div id="filter-box">
+      <button class="filter-buttons" id="hot-filter" style="background-color:rgb(170,170,170)">🔥 Hot</button>
+      <button class="filter-buttons" id="new-filter">🕤 New</button>
+      <button class="filter-buttons" id="top-filter">
+        <img style="height:20px; width:20px;opacity: 0.7; transform: translate(0, 3px)"
+          src="https://www.iconpacks.net/icons/1/free-chart-icon-646-thumb.png">
+        Top</button>
+      <button class="filter-buttons" id="save-filter">📖 Saved</button>
+      <button id="dropdown-button">
+        <div id="card-classic-compact">
+          <p class="card-display"></p>
+          <p class="card-display"></p>
+        </div>
+        <span id="dropdown-arrows">⬍</span>
+        <!--⇳-->
+        <!-- <img style="height:20px; width:20px" src=> -->
+      </button>
+      <div class="dropdown-content">
+        <!-- <table>
+          <tr>Card</tr>
+          <tr>Classic</tr>
+          <tr>Compact</tr>
+
+        </table> -->
+
+      </div> <!-- dropdown-content -->
+    </div>  <!-- filter-box-->
+
+<!-- 
+    <div class="main-post">
+  
+      <div class="vote-section-in-post">
+        <img id="upvote"
+          src="https://www.vhv.rs/dpng/d/445-4456459_reddit-clipart-icon-reddit-upvote-hd-png-download.png"
+          alt="upvote" />
+        <img id="downvote" src="https://www.vhv.rs/dpng/d/127-1278380_reddit-downvote-transparent-hd-png-download.png"
+          alt="downvote" />
+      </div>
+ 
+      <div class="actual-post">
+        <div id="main-header">
+          <p id="author">Posted by: 
+          </p>
+        </div>
+        <h3 id="title">Title Here</h2>
+        <img id="main-image" src="" alt="Image Goes here" />
+        <p class="description">ITS BEER</p>
+      </div>
+ 
+      <div class="comment-share-section">
+        <span class="listeners" id="comment-listener">
+          <img class="css-images" id='comment-img'
+            src="https://icons-for-free.com/iconfiles/png/512/chat+comment+communication+message+talk+text+icon-1320166550137140710.png">
+          <span>Comments</span>
+        </span> 
+        <span class="listeners" id="share-listener">
+          <img class="css-images" id='share-img'
+            src="https://cdn0.iconfinder.com/data/icons/ui-fill-glyphs/20/share-512.png">
+          <span>Share</span>
+        </span>
+        <span class="listeners" id="save-listener">
+          <img class="css-images" id='save-img' src="https://cdn-icons-png.flaticon.com/512/6924/6924811.png">
+          <span>Save</span>
+        </span>
+        <span class="listeners" id="delete-button">Delete</span>
+        <label id="ellipsis">...</label>
+ 
+      </div> 
+      <span id="delete-button">
+        <img id='delete-img' class='css-images' src="https://icon-library.com/images/delete-icon/delete-icon-13.jpg">
+      </span>
+    </div> -->
+
+
+
+  </div> 
+
+
+  <div class='side-bar'>
+    <div class="in-side-bar" id="about-community">
+      <span class='ac-headers'>About Community</span>
+      <p class='ac-body'>Welcome to BrewCrew, the ultimate gathering place for beer lovers around the globe! Whether
+        you're a seasoned connoisseur, a homebrewer, or simply someone who appreciates the craft, this subreddit is your
+        go-to destination for all things beer-related.
+      </p>
+      <li>Share Your Brews 🍺</li>
+      <li>Connect with Fellow Beer Enthusiasts 🌍</li>
+      <li>Capture the Brew Journey 📷</li>
+      <br>
+      <img id="cake" src='https://i.redd.it/j7eb26i40x041.png'>
+      <span style='color: rgb(97, 97, 97)'>Created Jun 25, 2023</span>
+      <br>
+      <p style="color: rgb(170, 170, 170); text-align: center;">___________________________________</p>
+      <span style="font-size: 20px; font-weight: bold">127k</span>
+      <span>🟢</span>
+    </div> <!-- id=about-community -->
+
+    <div class="in-side-bar">
+      <form id='submission-form' type='submit'>
+        <span class="ac-headers">Submission Form</span>
+        <p class="ac-body">Make your own post submission below</p>
+        <textarea id='new-title' class='submission-boxes' placeholder="Title of Your Post"></textarea>
+        <textarea id='new-description' class='submission-boxes' placeholder="Content/Description"></textarea>
+        <textarea id="new-image" class='submission-boxes' placeholder="Image URL (not required)" style="height: 18px"></textarea>
+        <textarea id='new-username' class='submission-boxes' placeholder="Username" style='height: 18px'></textarea>
+        <button>Create Post</button>
+      </form>
+
+    </div>
+
+  </div> <!-- side-bar -->
+
+</body>
+
+</html>
+
+<!-- <img id="subreddit-icon" src="https://media.istockphoto.com/id/453744721/photo/glass-of-cold-beer-with-condensation.jpg?s=612x612&w=0&k=20&c=GQ7QXsUpe_WZvGaLMVY8oxv7dmhUsjQxOn9JtA1nwFs=" alt="subreddit icon">
+          <p id="subreddit">r/Breweries</p> -->
